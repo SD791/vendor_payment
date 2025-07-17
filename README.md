@@ -11,7 +11,7 @@ A multi-database eCommerce backend system that simulates real-time payments betw
 - 💼 **Merchant Wallet** updates after transactions
 - 🔄 Real-time fee deduction using **MySQL Triggers**
 - 🔗 Integrated with REST API for seamless communication
-- 🧪 Modular databases: `amazon_db`, `vendorpay_db`, `merchant_db`
+- 🧪 Modular databases: `amazone_db`, `vendorpay_db`, `merchant_db`
 
 ---
 
@@ -28,7 +28,7 @@ A multi-database eCommerce backend system that simulates real-time payments betw
 
 ## 🗃️ Database Schema
 
-- **Amazon DB**
+- **Amazone DB**
   - `Customer`
   - `Order`
   - `Product`
@@ -36,7 +36,7 @@ A multi-database eCommerce backend system that simulates real-time payments betw
 - **VendorPay DB**
   - `Transaction`
   - MySQL Trigger for fee split:
-    - 5% Amazon Fee
+    - 5% Amazone Fee
     - 5% VendorPay Fee
     - 90% to Merchant Wallet
 
@@ -51,12 +51,12 @@ A multi-database eCommerce backend system that simulates real-time payments betw
 1. Customer places an order
 2. A transaction is created in `vendorpay_db`
 3. A MySQL **Trigger** fires:
-   - Deducts 5% Amazon Fee
+   - Deducts 5% Amazone Fee
    - Deducts 5% VendorPay Fee
    - Adds 90% to the merchant's wallet
 4. APIs return final status to customer & merchant
 
 ---
 
-## 📁 Project Structure
+
 
